@@ -1,0 +1,211 @@
+ul li {
+  list-style: none;
+}
+.header {
+  padding: 12px 0;
+}
+.logo {
+  font-size: 36px;
+  text-decoration: underline;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.home {
+  background: var(--navy);
+  color: var(--white);
+}
+.main--heading {
+  font-family: Rubik;
+  font-size: 52px;
+}
+.home__img {
+  width: 800px;
+  height: 800px;
+}
+.home__img img {
+  width: 100%;
+  height: 100%;
+}
+.home__info {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+}
+.text {
+  font-family: Montserrat;
+  font-size: 16px;
+  margin: 24px 0;
+}
+.home__info--bottom p {
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 700;
+}
+.pad{
+  padding: 50px 0;
+}
+.nonActive {
+  background: none;
+  color: grey;
+  font-size: 18px;
+  font-family: Rubik;
+}
+.nonActive:hover {
+  background: var(--green);
+  color: var(--white);
+}
+.courses--category {
+  width: 70%;
+  margin: 24px auto;
+}
+.heading {
+  color: var(--navy);
+  font-size: 42px;
+  text-align: center;
+  margin: 24px auto;
+  font-family: Rubik;
+}
+.courses--card {
+  width: 350px;
+  padding: 16px;
+  box-shadow: 12px 12px 40px -10px rgba(0, 0, 0, 0.75);
+  background: var(--white);
+  height: 470px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.courses--card img {
+  width: 100%;
+  height: 280px;
+  border-radius: 4px;
+  background: grey;
+}
+.courses--card img:hover {
+  scale: 1.1;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.courses--name {
+  display: flex;
+  transform: translateY(-25px);
+  -webkit-transform: translateY(-25px);
+  -moz-transform: translateY(-25px);
+  -ms-transform: translateY(-25px);
+  -o-transform: translateY(-25px);
+}
+.courses--name span {
+  padding: 6px 24px;
+  background: rgb(255, 20, 147, 0.8);
+  background: rgb(255, 69, 0, 0.8);
+  background: rgb(2, 25, 52, 0.8);
+  color: var(--white);
+  font-family: Rubik;
+  margin: 0 auto;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.courses--describe {
+  font-family: Montserrat;
+  font-size: 16px;
+}
+.courses--btn {
+  margin: 24px 0;
+}
+.opinion{
+  padding: 50px 0;
+}
+.opinion--title {
+  font-family: Rubik;
+  font-size: 32px;
+}
+.opinion--name {
+  font-family: Rubik;
+  font-size: 24px;
+  margin: 24px 0 0 0;
+}
+.grey--text {
+  color: grey;
+  font-family: Montserrat;
+  font-size: 14px;
+}
+.footer--link{
+  color: var(--white);
+  text-decoration: none;
+  font-family: Montserrat;
+}
+.footer ul li{
+  margin: 8px 0;
+}
+.footer--title{
+  font-family: Rubik;
+  font-size: 24px;
+}
+.footer--link:hover, .footer ul li{
+  color: var(--green);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.footer .row{
+  align-items: normal;
+}
+.logo--part{
+  width: 400px;
+}
+.logo--part p {
+  margin: 24px 0;
+}
+.white{
+  color: var(--white);
+}
+.form{
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  flex-direction: column;
+  width: 500px;
+  gap: 12px;
+  margin: 0 auto;
+}
+.form .inputs{
+  width: 100%;
+}
+.form .inputs input, textarea{
+  width: 100%;
+  border-radius: 8px;
+  padding: 14px 18px;
+  border: none;
+  outline: none;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.form .inputs input::placeholder, .textarea::placeholder{
+  font-family: Montserrat;
+  font-size: 16px;
+}
+.form--btn{
+  margin: 24px 0;
+}
+.green{
+  color: var(--green);
+}
+.green:hover{
+  color: var(--white);
+}
+.notfound{
+  min-height: 59vh;
+}
