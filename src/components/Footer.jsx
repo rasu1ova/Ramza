@@ -3,17 +3,16 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="footer home pad">
-      <div className="container row">
+    <footer className="footer home ">
+      <div className="container row-wrap pad">
         <div className="logo--part">
-        <h2 className="logo">  <Link to="/">Logo</Link></h2>
+        <h2 className="logo">  <Link to="/">Ramza</Link></h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
             tristique placerat eleifend aliquam pellentesque facilisis ultrices.
             Imperdiet mus urna egestas at tellus.
           </p>
         </div>
-        <div className="row">
           <ul>
             <h2 className="footer--title"><Link className="footer--link" to='/'>Menu</Link></h2>
             <li><Link className="footer--link" to='/biz-haqimizda'>Biz haqimizda</Link></li>
@@ -33,7 +32,11 @@ function Footer() {
             <li><Link className="footer--link" to='/'>Jamoa</Link></li>
           </ul>
         </div>
-      </div>
+        <hr className="hr container"/>
+        <div className=" container header">
+          <p className="grey--text">© Ramza</p>
+          <p className="grey--text">Created 2023</p>
+        </div>
     </footer>
   );
 }

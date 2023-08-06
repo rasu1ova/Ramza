@@ -7,7 +7,6 @@ function CoursesComp() {
     fetch("https://my-json-server.typicode.com/rasu1ova/ramzaApi/CoursesData")
       .then((res) => res.json())
       .then((res) => setData(res));
-    console.log(data);
   }, []);
   return (
     <>
@@ -15,8 +14,12 @@ function CoursesComp() {
         data.map((item, index) => {
           return (
             <div className="courses--card" key={index}>
-              <img src={item.img} alt={`${item.name} yo'nalishi rasmi`} />
-              <div className="courses--name"><span>{item.name}</span></div>
+              <div className="courses--img">
+                <img src={item.img} alt={`${item.name} yo'nalishi rasmi`} />
+              </div>
+              <div className="courses--name">
+                <span>{item.name}</span>
+              </div>
               <h3 className="courses--describe">{item.describe}</h3>
               <div className="courses--btn">
                 <button className="btn row">
@@ -27,7 +30,7 @@ function CoursesComp() {
           );
         })
       ) : (
-        <p className="heading">Loading...</p>
+        <p className="loading"></p>
       )}
     </>
   );

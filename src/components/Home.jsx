@@ -1,5 +1,6 @@
 import React from "react";
-import HomeBg from "../assets/home-img.png";
+import { HomeBg } from "../assets";
+
 function Home() {
   return (
     <section className="home pad">

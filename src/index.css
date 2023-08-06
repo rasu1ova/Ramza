@@ -28,7 +28,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 24px;
+  gap: 18px;
 }
 .row-wrap{
   display: flex;
@@ -46,6 +46,7 @@
   font-weight: 500;
   color: var(--navy);
   text-decoration: inherit;
+  font-size: 18px;
 }
 
 .link:hover {
@@ -62,7 +63,7 @@ button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
-  font-size: 1em;
+  font-size: 18px;
   font-weight: 500;
   font-family: inherit;
   background-color: var(--green);
@@ -93,5 +94,24 @@ button a{
   }
   .link:hover {
     color: var(--green);
+  }
+}
+
+@media screen and (max-width:1150px) {
+  .container{
+    width: 90%;
+  }
+ 
+  .row-wrap{
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width:715px){
+  .footer .row{
+    justify-content: flex-start;
+  }
+  .row{
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

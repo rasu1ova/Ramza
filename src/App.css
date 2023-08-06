@@ -3,11 +3,17 @@ ul li {
 }
 .header {
   padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo {
   font-size: 36px;
   text-decoration: underline;
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+.menu {
+  display: none;
 }
 .home {
   background: var(--navy);
@@ -18,19 +24,25 @@ ul li {
   font-size: 52px;
 }
 .home__img {
-  width: 800px;
-  height: 800px;
+  width: 600px;
+  height: 450px;
+  box-shadow: 12px 12px 40px -10px rgb(128, 0, 128, 0.8);
 }
 .home__img img {
   width: 100%;
   height: 100%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 .home__info {
   width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 500px;
+  height: 450px;
 }
 .text {
   font-family: Montserrat;
@@ -42,7 +54,7 @@ ul li {
   font-size: 16px;
   font-weight: 700;
 }
-.pad{
+.pad {
   padding: 50px 0;
 }
 .nonActive {
@@ -78,27 +90,31 @@ ul li {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
 }
-.courses--card img {
-  width: 100%;
-  height: 280px;
+.courses--img {
+  overflow: hidden;
   border-radius: 4px;
   background: grey;
+  height: 260px;
+}
+.courses--img img {
+  width: 100%;
+  height: 100%;
 }
 .courses--card img:hover {
-  scale: 1.1;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
+  scale: 1.2;
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
 }
 .courses--name {
   display: flex;
-  transform: translateY(-25px);
-  -webkit-transform: translateY(-25px);
-  -moz-transform: translateY(-25px);
-  -ms-transform: translateY(-25px);
-  -o-transform: translateY(-25px);
+  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
 }
 .courses--name span {
   padding: 6px 24px;
@@ -118,11 +134,33 @@ ul li {
   font-family: Montserrat;
   font-size: 16px;
 }
+.news--describe {
+  margin: 12px 0;
+  font-size: 20px;
+}
 .courses--btn {
   margin: 24px 0;
 }
-.opinion{
+.opinion {
   padding: 50px 0;
+}
+.opinion__img {
+  float: left;
+  width: 400px;
+  height: 350px;
+  background: darkgray;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.opinion__img img {
+  height: 100%;
+}
+.opinion__info {
+  width: 600px;
+  float: right;
 }
 .opinion--title {
   font-family: Rubik;
@@ -138,19 +176,20 @@ ul li {
   font-family: Montserrat;
   font-size: 14px;
 }
-.footer--link{
+.footer--link {
   color: var(--white);
   text-decoration: none;
   font-family: Montserrat;
 }
-.footer ul li{
+.footer ul li {
   margin: 8px 0;
 }
-.footer--title{
+.footer--title {
   font-family: Rubik;
   font-size: 24px;
 }
-.footer--link:hover, .footer ul li{
+.footer--link:hover,
+.footer ul li {
   color: var(--green);
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -158,54 +197,211 @@ ul li {
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
 }
-.footer .row{
+.footer .row-wrap {
   align-items: normal;
 }
-.logo--part{
-  width: 400px;
+.footer ul {
+  min-width: 200px;
+}
+.logo--part {
+  width: 320px;
 }
 .logo--part p {
   margin: 24px 0;
 }
-.white{
+.white {
   color: var(--white);
 }
-.form{
+.form {
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
   flex-direction: column;
   width: 500px;
   gap: 12px;
   margin: 0 auto;
 }
-.form .inputs{
+.form .inputs {
   width: 100%;
 }
-.form .inputs input, textarea{
+.form .inputs input,
+textarea {
   width: 100%;
   border-radius: 8px;
   padding: 14px 18px;
-  border: none;
-  outline: none;
+  border: transparent;
+  outline: transparent;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
 }
-.form .inputs input::placeholder, .textarea::placeholder{
+.form .inputs input:focus,
+textarea:focus {
+  outline: 2px solid var(--green);
+}
+.form .inputs input::placeholder,
+.textarea::placeholder {
   font-family: Montserrat;
   font-size: 16px;
 }
-.form--btn{
+.form--btn {
   margin: 24px 0;
 }
-.green{
+.green {
   color: var(--green);
 }
-.green:hover{
+.nonActive:hover .green {
   color: var(--white);
 }
-.notfound{
+.notfound {
   min-height: 59vh;
+}
+
+.loading {
+  margin: 50px auto;
+  width: 80px;
+  height: 80px;
+  border-top: 10px solid var(--green);
+  border-bottom: 10px solid var(--green);
+  border-left: 10px solid green;
+  border-right: 10px solid green;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: loading 0.8s linear infinite;
+  -webkit-animation: loading 0.8s linear infinite;
+}
+@keyframes loading {
+  from {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+.hr {
+  border-bottom: 0px solid grey;
+  background: grey;
+}
+@media screen and (max-width: 1150px) {
+  .main--heading {
+    font-size: 42px;
+  }
+  .home__info--bottom p {
+    font-size: 15px;
+  }
+  .home__info--bottom {
+    flex-wrap: wrap;
+  }
+  .courses--category {
+    width: 90%;
+  }
+  .opinion--title {
+    font-size: 28px;
+  }
+  .footer .row-wrap {
+    justify-content: flex-start;
+    gap: 36px;
+  }
+  .opinion__info {
+    width: 450px;
+    float: right;
+    margin-top: 50px;
+  }
+  .opinion--title {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .home__info {
+    height: auto;
+  }
+  .home__info .row {
+    margin: 50px 0 0 0;
+    justify-content: flex-start;
+  }
+  .home__img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .home .row {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .opinion--title,
+  .opinion--name {
+    font-size: 20px;
+  }
+  .opinion__info {
+    width: 380px;
+    float: right;
+    margin-top: 50px;
+  }
+  .opinion__img {
+    width: 280px;
+    margin: 0 auto;
+  }
+  .opinion__img img {
+    width: 100%;
+  }
+}
+
+.active {
+  display: block;
+}
+@media screen and (max-width: 750px) {
+  .opinion__info {
+    width: 100%;
+    text-align: center;
+  }
+  .opinion__img {
+    height: 280px;
+    float: none;
+  }
+}
+@media screen and (max-width: 715px) {
+  nav {
+    display: none;
+    /* margin-top: 50px; */
+  }
+  nav ul {
+    top: 78px;
+    height: 100%;
+    width: 90%;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    background: rgb(2, 25, 52, 0.9);
+    padding: 24px;
+    z-index: 10;
+  }
+  nav ul .link {
+    color: var(--white);
+    font-size: 20px;
+  }
+  .menu {
+    display: block;
+  }
+  .form {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 395px) {
+  .main--heading,
+  .heading {
+    font-size: 36px;
+  }
+  .opinion--title {
+    font-size: 18px;
+  }
+  
 }
