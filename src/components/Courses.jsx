@@ -2,6 +2,7 @@ import React from 'react'
 import CoursesComp from './CoursesComp'
 
 function Courses() {
+  
   return (
     <section className='container pad'>
       <h2 className='heading'>Bizdagi kurslar</h2>

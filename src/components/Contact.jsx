@@ -35,6 +35,7 @@ function Contact() {
           <button className="btn">Yuborish</button>
         </div>
       </form>
+      <hr className="hr container"/>
     </section>
   );
 }
