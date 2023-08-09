@@ -24,19 +24,29 @@ function Opinions() {
         "Bu yerda o‘qiganimdan so‘ng yangi bilim va tushunchalarga ega bo‘ldim. Murabbiy juda samimiy edi va menga kerakli bilimlarni olishim uchun yo'l-yo'riq ko'rsatdi. Rahmat!",
       name: "Ali",
       location: "Chust shahri",
-    },
-    {
+    },{
       id: 2,
       title:
         "Bu yerda o‘qiganimdan so‘ng yangi bilim va tushunchalarga ega bo‘ldim. Murabbiy juda samimiy edi va menga kerakli bilimlarni olishim uchun yo'l-yo'riq ko'rsatdi. Rahmat!",
-      name: "Ali",
+      name: "Vali",
       location: "Chust shahri",
-    },
-    {
+    },{
       id: 3,
       title:
         "Bu yerda o‘qiganimdan so‘ng yangi bilim va tushunchalarga ega bo‘ldim. Murabbiy juda samimiy edi va menga kerakli bilimlarni olishim uchun yo'l-yo'riq ko'rsatdi. Rahmat!",
-      name: "Ali",
+      name: "Sobir",
+      location: "Chust shahri",
+    },{
+      id: 4,
+      title:
+        "Bu yerda o‘qiganimdan so‘ng yangi bilim va tushunchalarga ega bo‘ldim. Murabbiy juda samimiy edi va menga kerakli bilimlarni olishim uchun yo'l-yo'riq ko'rsatdi. Rahmat!",
+      name: "Jamol",
+      location: "Chust shahri",
+    },{
+      id: 5,
+      title:
+        "Bu yerda o‘qiganimdan so‘ng yangi bilim va tushunchalarga ega bo‘ldim. Murabbiy juda samimiy edi va menga kerakli bilimlarni olishim uchun yo'l-yo'riq ko'rsatdi. Rahmat!",
+      name: "Akmal",
       location: "Chust shahri",
     },
   ];
@@ -44,7 +54,7 @@ function Opinions() {
     <section className="container opinion  pad">
       <Slider {...settings}>
         {opinions.map((opinion, index) => (
-          <div key={index} style={myStyle} className="row">
+          <div key={index} style={myStyle} className="row ">
             <div className="opinion__img">
               <img src={Pupil} alt={`Opinion ${index + 1}`} />
             </div>

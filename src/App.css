@@ -67,6 +67,9 @@ ul li {
   background: var(--green);
   color: var(--white);
 }
+.carousel--item:nth-child(odd){
+  background: grey;
+}
 .courses--category {
   width: 70%;
   margin: 24px auto;
@@ -155,6 +158,7 @@ ul li {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
 }
+
 .opinion__img img {
   height: 100%;
 }
@@ -391,8 +395,14 @@ textarea:focus {
   .menu {
     display: block;
   }
-  .form {
+  .form, .home__img {
     width: 90%;
+  }
+}
+@media screen and (max-width:565px){
+  .home__img{
+    width: 100%;
+    height: 350px;
   }
 }
 @media screen and (max-width: 395px) {
@@ -403,5 +413,7 @@ textarea:focus {
   .opinion--title {
     font-size: 18px;
   }
-  
+  .home__img{
+    height: 250px;
+  }
 }
