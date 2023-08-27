@@ -1,9 +1,11 @@
-import React from 'react'
+// import React from 'react'
 
-function LogIn() {
-  return (
-    <div>LogIn</div>
-  )
-}
+// function LogIn() {
+//   return (
+//     <section className='container pad'>
+//       <h2 className="heading">Log in</h2>
+//     </section>
+//   )
+// }
 
-export default LogIn
+// export default LogIn

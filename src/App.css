@@ -9,8 +9,13 @@ ul li {
 }
 .logo {
   font-size: 36px;
-  text-decoration: underline;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+}
+.logo a {
+  font-family: sans-serif;
+  color: var(--green);
+  font-size: 42px;
+  text-decoration: none;
 }
 .menu {
   display: none;
@@ -67,7 +72,7 @@ ul li {
   background: var(--green);
   color: var(--white);
 }
-.carousel--item:nth-child(odd){
+.carousel--item:nth-child(odd) {
   background: grey;
 }
 .courses--category {
@@ -113,11 +118,11 @@ ul li {
 }
 .courses--name {
   display: flex;
-  transform: translateY(-20px);
-  -webkit-transform: translateY(-20px);
-  -moz-transform: translateY(-20px);
-  -ms-transform: translateY(-20px);
-  -o-transform: translateY(-20px);
+  transform: translateY(-19px);
+  -webkit-transform: translateY(-19px);
+  -moz-transform: translateY(-19px);
+  -ms-transform: translateY(-19px);
+  -o-transform: translateY(-19px);
 }
 .courses--name span {
   padding: 6px 24px;
@@ -375,18 +380,20 @@ textarea:focus {
 @media screen and (max-width: 715px) {
   nav {
     display: none;
-    /* margin-top: 50px; */
   }
   nav ul {
-    top: 78px;
-    height: 100%;
-    width: 90%;
+    top: 98px;
+    height: 80%;
+    width: 100%;
     flex-direction: column;
     position: absolute;
-    right: 20px;
+    right: 0px;
     background: rgb(2, 25, 52, 0.9);
     padding: 24px;
     z-index: 10;
+  }
+  .menu .btn {
+    translate: 0px;
   }
   nav ul .link {
     color: var(--white);
@@ -395,12 +402,13 @@ textarea:focus {
   .menu {
     display: block;
   }
-  .form, .home__img {
+  .form,
+  .home__img {
     width: 90%;
   }
 }
-@media screen and (max-width:565px){
-  .home__img{
+@media screen and (max-width: 565px) {
+  .home__img {
     width: 100%;
     height: 350px;
   }
@@ -413,7 +421,7 @@ textarea:focus {
   .opinion--title {
     font-size: 18px;
   }
-  .home__img{
+  .home__img {
     height: 250px;
   }
 }

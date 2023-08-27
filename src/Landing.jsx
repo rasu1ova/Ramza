@@ -1,13 +1,10 @@
 import React from "react";
-import { Footer, Header } from "./components/index";
-import { Outlet } from "react-router-dom";
-import { Route, Routes } from "react-router-dom";
 import {
-  About,
+  // About,
   Contact,
   Courses,
   Home,
-  LogIn,
+  // LogIn,
   News,
   Opinions,
 } from "./components";
